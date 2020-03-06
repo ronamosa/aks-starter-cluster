@@ -65,4 +65,5 @@ terraform {
 `ENV` must be set, so just plan and build with
 
 `ENV=prod make plan`
+
 `ENV=prod make apply`
