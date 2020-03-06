@@ -8,7 +8,7 @@ basic starter cluster for azure kubernetes service -- no frills, pay-as-you-go f
 * setup azurerm backend to save terraform state to azure
 * export ARM_KEY to your env to make az work when you run terraform
 
-### Files included
+### Files included in `/terraform`
 
 | filename | notes |
 | --- | --- |
@@ -47,7 +47,7 @@ check with `env` in your terminal and check it exists. chuck it in your `~/.bash
 
 ## Update aks.tf
 
-Update `aks.tf` with the appropriate values from running the `./create_az_backend.sh` script before you build it:
+In the `/terraform` folder, update `aks.tf` with the appropriate values from running the `./create_az_backend.sh` script before you build it:
 
 ```ruby
 terraform {
@@ -62,8 +62,8 @@ terraform {
 
 ## Makefile build
 
-`ENV` must be set, so just plan and build with
+`ENV` must be set, so just plan and build by going into In the `/terraform` folder and running
 
-`ENV=prod make plan`
+`$ ENV=prod make plan`
 
-`ENV=prod make apply`
+`$ ENV=prod make apply`
