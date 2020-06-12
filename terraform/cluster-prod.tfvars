@@ -1,6 +1,6 @@
 env = "prod"
-aks_name= "aks-demo"
-location="australiasoutheast"
+aks_name = "aks-demo"
+location = "australiasoutheast"
 
 # Kubernetes Variables
 aks_kubernetes_version = "1.15.7"
@@ -15,7 +15,7 @@ default_node_pool = {
     cluster_auto_scaling_max_count = 10
 }
 
-vnet_address_prefix="15.0.0.0/8"
-subnet_address_prefix="15.0.0.0/22"
+vnet_address_prefix = "15.0.0.0/8"
+subnet_address_prefix = "15.0.0.0/22"
  
 
