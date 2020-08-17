@@ -21,7 +21,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   resource_group_name = azurerm_resource_group.aks_rg.name
 
   linux_profile {
-    admin_username = var.vm_user_name"terraform"
+    admin_username = var.vm_user_name
 
     ssh_key {
       key_data = tls_private_key.ssh_key.public_key_openssh
